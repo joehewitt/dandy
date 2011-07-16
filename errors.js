@@ -30,5 +30,7 @@ exports.logException = function(exc, detail) {
 	}
 	if (exc.stack) {
 		util.debug(exc.stack);		
+	} else {
+		util.debug(exc);
 	}
 };
