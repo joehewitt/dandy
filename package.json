@@ -2,7 +2,7 @@
   "name": "dandy",
   "description": "Error handling and logging utilities",
   "version": "0.0.1",
-  "url": "http://github.com/joehewitt/dandy",
+  "homepage": "http://github.com/joehewitt/dandy",
   "repository": {
       "type": "git",
       "url" : "http://github.com/joehewitt/dandy.git"

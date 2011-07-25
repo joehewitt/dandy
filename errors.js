@@ -20,6 +20,22 @@ exports.abind = function(fn, cb, self) {
 }
 
 /**
+ * Asynchronous bind
+ *
+ * Automatically passes errors and exceptions to the callback.
+ */
+exports.ibind = function(fn, cb, self) {
+	return function() {
+		try {
+			fn.apply(self, arguments);	
+		} catch (exc) {
+			exports.logException(exc);
+			if (cb) cb(exc);
+		}
+	}
+}
+
+/**
  * Logs exceptions to stderr in a friendly way.
  */
 exports.logException = function(exc, detail) {
