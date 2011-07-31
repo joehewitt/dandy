@@ -6,7 +6,7 @@ JavaScript utilities for error handling and logging.
 Installation
 ------------
 
-    $ npm install dandy (someday! not in registry yet)
+    $ npm install dandy
 
 License 
 -------
