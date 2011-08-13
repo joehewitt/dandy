@@ -7,7 +7,12 @@
  * statements, but limit their cost to the boolean test of the D variable.  
  */
 function D() {
-	console.log.apply(console, arguments);
+	if (console.log.apply) {
+		console.log.apply(console, arguments);
+	} else {
+		var args = []; args.push.apply(args, arguments);
+		console.log(args.join(' '));
+	}
 }
 
 try {

@@ -1,7 +1,7 @@
 {
   "name": "dandy",
   "description": "Error handling and logging utilities",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "http://github.com/joehewitt/dandy",
   "repository": {
       "type": "git",
