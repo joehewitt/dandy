@@ -47,6 +47,11 @@ exports.logException = function(exc, detail) {
 	if (exc.stack) {
 		util.debug(exc.stack);		
 	} else {
-		util.debug(exc);
+		var err = exc+'';
+		if (err == '[object Object]') {
+			util.debug(util.inspect(exc));
+		} else {
+			util.debug(exc);
+		}
 	}
 };
