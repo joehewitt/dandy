@@ -11,7 +11,7 @@ exports.abind = function(fn, cb, self) {
 		if (err) { if (cb) cb(err); return; }
 
 		try {
-			fn.apply(self, arguments);	
+			return fn.apply(self, arguments);	
 		} catch (exc) {
 			exports.logException(exc);
 			if (cb) cb(exc);
@@ -27,7 +27,7 @@ exports.abind = function(fn, cb, self) {
 exports.ibind = function(fn, cb, self) {
 	return function() {
 		try {
-			fn.apply(self, arguments);	
+			return fn.apply(self, arguments);	
 		} catch (exc) {
 			exports.logException(exc);
 			if (cb) cb(exc);
