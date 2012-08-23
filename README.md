@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/joehewitt/dandy.png)](http://travis-ci.org/joehewitt/dandy)
 dandy
 ========
 
